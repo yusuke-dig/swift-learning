@@ -78,7 +78,8 @@
 ### 手順
 
 1. `../dev-learning-logs/logs/swift/YYYY-MM-DD.md` を作成する
-   - YYYY-MM-DD は今日の日付
+   - YYYY-MM-DD は **`date +%Y-%m-%d` で取得した実際の日付**（セッション開始時刻ではなく、作業した時点の日付）
+   - 同日に既存ファイルがあっても、上書きせず **別ファイルを作らない**。その日のログに追記する形にする
    - 記法・粒度は `../dev-learning-logs/CLAUDE.md` の規約に従う
    - 構成: 今日の作業内容 / 今日学んだこと（トピックごとに見出しを分ける）
 2. `../dev-learning-logs/README.md` の `## Swift` セクションに1行追加する
