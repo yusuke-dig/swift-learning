@@ -16,16 +16,19 @@
 // 公式: F = C × 1.8 + 32
 func celsiusToFahrenheit(_ celsius: Double) -> Double {
     // ここに実装してください
+    return celsius * 1.8 + 32
 }
 
 // 課題2 (中): 文字列が「長い単語」かどうか判定する
 // 6文字以上なら true を返す
 func isLongWord(_ word: String) -> Bool {
     // ここに実装してください
+    return word.count >= 6
 }
 
 // 課題3 (中): 整数の絶対値を返す
 // 標準ライブラリの abs() は使わず、自分で実装する
 func absolute(_ n: Int) -> Int {
     // ここに実装してください
+    return n >= 0 ? n : -n
 }
