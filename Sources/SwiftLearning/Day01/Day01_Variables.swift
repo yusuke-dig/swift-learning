@@ -25,6 +25,7 @@
 // 例: greet(name: "Swift") → "Hello, Swift!"
 func greet(name: String) -> String {
     // ここに実装してください
+    return "Hello, \(name)!"
 }
 
 // 課題2:
@@ -32,6 +33,7 @@ func greet(name: String) -> String {
 // 例: add(a: 3, b: 5) → 8
 func add(a: Int, b: Int) -> Int {
     // ここに実装してください
+    return a + b
 }
 
 // 課題3:
@@ -40,4 +42,5 @@ func add(a: Int, b: Int) -> Int {
 // 例: isEven(4) → true / isEven(7) → false
 func isEven(_ number: Int) -> Bool {
     // ここに実装してください
+    return (number % 2 == 0)
 }

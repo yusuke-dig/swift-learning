@@ -13,7 +13,8 @@
    - `Sources/SwiftLearning/DayXX/DayXX_{TopicName}.swift` (実装テンプレート)
    - `Tests/SwiftLearningTests/DayXX/DayXXTests.swift` (テスト)
 5. `README.md` の進捗表で該当Dayを `⬜ 未着手` → `⬜ 未完了` に更新する
-6. git add して適切なメッセージでコミットする
+6. `swift build 2>&1` を実行してコンパイルエラーになることを確認する（RED確認）
+7. git add して適切なメッセージでコミットする
 
 ## 1日15分の時間配分
 
