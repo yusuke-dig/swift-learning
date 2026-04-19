@@ -67,6 +67,27 @@
   - 進捗表の該当Dayのメモ列に `[レビュー](Sources/SwiftLearning/DayXX/REVIEW.md)` リンクを追加する
 - `README.md` の該当Dayを `✅ 完了` に更新し、完了日を記入してコミットする
 - コミットメッセージ: `Complete Day{XX}: {トピック名}`
+- `../dev-learning-logs/` に学習ログを書く（下記「dev-learning-logs 連携」参照）
+
+## dev-learning-logs 連携
+
+テスト合格後、`../dev-learning-logs/` にも学習ログを書くこと。
+
+### 手順
+
+1. `../dev-learning-logs/logs/swift/YYYY-MM-DD.md` を作成する
+   - YYYY-MM-DD は今日の日付
+   - 記法・粒度は `../dev-learning-logs/CLAUDE.md` の規約に従う
+   - 構成: 今日の作業内容 / 今日学んだこと（トピックごとに見出しを分ける）
+2. `../dev-learning-logs/README.md` の `## Swift` セクションに1行追加する
+   - 形式: `- [YYYY-MM-DD](logs/swift/YYYY-MM-DD.md) 今日のトピック要約`
+3. `../dev-learning-logs/` でコミットする：
+   ```
+   cd ../dev-learning-logs
+   git add logs/swift/YYYY-MM-DD.md README.md
+   git commit -m "Swift Day{XX}: {トピック名}"
+   cd -
+   ```
 
 ## 進捗の状態定義
 | 状態 | 意味 |
