@@ -12,7 +12,8 @@
 4. 以下のファイルを作成する:
    - `Sources/SwiftLearning/DayXX/DayXX_{TopicName}.swift` (実装テンプレート)
    - `Tests/SwiftLearningTests/DayXX/DayXXTests.swift` (テスト)
-5. git add して適切なメッセージでコミットする
+5. `README.md` の進捗表で該当Dayを `⬜ 未着手` → `⬜ 未完了` に更新する
+6. git add して適切なメッセージでコミットする
 
 ## 1日15分の時間配分
 
@@ -56,6 +57,17 @@
 | Day13 | 高階関数 (map/filter/reduce) | doubleAll, onlyEven, sumAll |
 | Day14 | ジェネリクス | Stack<T>, findFirst |
 | Day15 | 非同期処理 (async/await) | fetchMessage, parallelFetch |
+
+## テスト合格を確認したとき
+- `README.md` の該当Dayを `✅ 完了` に更新し、完了日を記入してコミットする
+- コミットメッセージ: `Complete Day{XX}: {トピック名}`
+
+## 進捗の状態定義
+| 状態 | 意味 |
+|------|------|
+| ⬜ 未着手 | ファイル未作成 |
+| ⬜ 未完了 | ファイル作成済み・実装中 |
+| ✅ 完了 | 全テスト合格 |
 
 ## コミットメッセージ形式
 ```
