@@ -31,7 +31,8 @@
       "Bash(rm -rf *)"
     ],
     "additionalDirectories": [
-      "../dev-learning-logs"
+      "../dev-learning-logs",
+      "../bash-vim-dojo"
     ]
   }
 }
