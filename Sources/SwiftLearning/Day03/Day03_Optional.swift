@@ -26,6 +26,11 @@
 //     safeDivide(10, 0) → nil
 func safeDivide(_ a: Double, _ b: Double) -> Double? {
     // ここに実装してください
+    if b == 0 {
+        return nil
+    } else {
+        return a / b
+    }
 }
 
 // 課題2: firstElement
@@ -34,6 +39,10 @@ func safeDivide(_ a: Double, _ b: Double) -> Double? {
 //     firstElement([])        → nil
 func firstElement(_ array: [Int]) -> Int? {
     // ここに実装してください
+    if array.isEmpty {
+        return nil
+    }
+    return array.first
 }
 
 // 課題3: parseAge
@@ -44,4 +53,11 @@ func firstElement(_ array: [Int]) -> Int? {
 //     parseAge("150") → nil
 func parseAge(_ s: String) -> Int? {
     // ここに実装してください
+    let int = Int(s)
+    guard let int else { return nil }
+    if(int >= 0 && int <= 120 ) {
+        return int
+    } else {
+        return nil
+    }
 }
