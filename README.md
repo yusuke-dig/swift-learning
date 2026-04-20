@@ -18,7 +18,7 @@ swift test --filter Day01
 |-----|---------|------|--------|------|
 | Day01 | 変数と定数 (var/let) | ✅ 完了 | 2026-04-19 | [レビュー](Sources/SwiftLearning/Day01/REVIEW.md) |
 | Day02 | 基本型と型推論 | ✅ 完了 | 2026-04-19 | [レビュー](Sources/SwiftLearning/Day02/REVIEW.md) |
-| Day03 | オプショナル | ⬜ 未着手 | - | |
+| Day03 | オプショナル | ⬜ 未完了 | - | |
 | Day04 | コレクション | ⬜ 未着手 | - | |
 | Day05 | 制御構文 | ⬜ 未着手 | - | |
 | Day06 | 関数 | ⬜ 未着手 | - | |
