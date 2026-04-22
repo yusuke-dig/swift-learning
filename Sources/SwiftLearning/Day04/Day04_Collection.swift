@@ -21,6 +21,9 @@
 //     sum([])            → 0
 func sum(_ numbers: [Int]) -> Int {
     // ここに実装してください
+    var result = 0
+    numbers.forEach { result += $0 }
+    return result
 }
 
 // 課題2: countOccurrences
@@ -29,6 +32,8 @@ func sum(_ numbers: [Int]) -> Int {
 //     countOccurrences([1, 2, 3], target: 9)        → 0
 func countOccurrences(_ array: [Int], target: Int) -> Int {
     // ここに実装してください
+    let result = array.filter { $0 == target}
+    return result.count
 }
 
 // 課題3: mostFrequent
@@ -38,4 +43,12 @@ func countOccurrences(_ array: [Int], target: Int) -> Int {
 //     mostFrequent([])               → nil
 func mostFrequent(_ array: [Int]) -> Int? {
     // ここに実装してください
+    guard !array.isEmpty else { return nil }
+    
+    var result: [Int: Int] = [:]
+    array.forEach {
+        result[$0] = (result[$0] ?? 0) + 1
+    }
+    
+    return result.max(by: { $0.value < $1.value})?.key
 }
