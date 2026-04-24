@@ -20,7 +20,7 @@ swift test --filter Day01
 | Day02 | 基本型と型推論 | ✅ 完了 | 2026-04-19 | [レビュー](Sources/SwiftLearning/Day02/REVIEW.md) |
 | Day03 | オプショナル | ✅ 完了 | 2026-04-21 | [レビュー](Sources/SwiftLearning/Day03/REVIEW.md) |
 | Day04 | コレクション | ✅ 完了 | 2026-04-23 | [レビュー](Sources/SwiftLearning/Day04/REVIEW.md) |
-| Day05 | 制御構文 | ⬜ 未着手 | - | |
+| Day05 | 制御構文 | ⬜ 未完了 | - | |
 | Day06 | 関数 | ⬜ 未着手 | - | |
 | Day07 | クロージャ | ⬜ 未着手 | - | |
 | Day08 | 構造体 | ⬜ 未着手 | - | |
