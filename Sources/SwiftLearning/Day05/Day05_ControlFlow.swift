@@ -24,6 +24,12 @@
 //     grade(72) → "B"
 func grade(_ score: Int) -> String {
     // ここに実装してください
+    switch score {
+        case 90...100: return "A"
+        case 70..<90: return "B"
+        case 50..<70: return "C"
+        default: return "D"
+    }
 }
 
 // 課題2: fizzBuzz
@@ -32,6 +38,20 @@ func grade(_ score: Int) -> String {
 // 例: fizzBuzz(5) → ["1", "2", "Fizz", "4", "Buzz"]
 func fizzBuzz(_ n: Int) -> [String] {
     // ここに実装してください
+    var result: [String] = []
+    for i in 1...n {
+        switch i {
+        case let FizzBuzz where FizzBuzz % 5 == 0 && FizzBuzz % 3 == 0:
+            result.append("FizzBuzz")
+        case let fizz where fizz % 3 == 0:
+            result.append("Fizz")
+        case let buzz where buzz % 5 == 0:
+            result.append("Buzz")
+        default:
+            result.append("\(i)")
+        }
+    }
+    return result
 }
 
 // 課題3: factorial
@@ -40,4 +60,10 @@ func fizzBuzz(_ n: Int) -> [String] {
 //     factorial(0) → 1
 func factorial(_ n: Int) -> Int {
     // ここに実装してください
+    guard n != 0 else { return 1 }
+    var result = 1
+    for i in 1...n {
+        result *= i
+    }
+    return result
 }
