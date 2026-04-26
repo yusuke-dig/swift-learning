@@ -24,6 +24,8 @@
 //     applyTwice(1) { $0 + 10 }  → 21  (1→11→21)
 func applyTwice(_ x: Int, _ f: (Int) -> Int) -> Int {
     // ここに実装してください
+    let result = f(x)
+    return f(result)
 }
 
 // 課題2: myFilter(_:_:)
@@ -33,6 +35,12 @@ func applyTwice(_ x: Int, _ f: (Int) -> Int) -> Int {
 //     myFilter([10, 3, 7, 1])   { $0 > 5 }        → [10, 7]
 func myFilter(_ array: [Int], _ predicate: (Int) -> Bool) -> [Int] {
     // ここに実装してください
+    var result: [Int] = []
+    for num in array {
+        guard predicate(num) != false else { continue }
+        result.append(num)
+    }
+    return result
 }
 
 // 課題3: myMap(_:_:)
@@ -42,4 +50,9 @@ func myFilter(_ array: [Int], _ predicate: (Int) -> Bool) -> [Int] {
 //     myMap([1, 2, 3]) { $0 + 10 }     → [11, 12, 13]
 func myMap(_ array: [Int], _ transform: (Int) -> Int) -> [Int] {
     // ここに実装してください
+    var result: [Int] = []
+    for num in array {
+        result.append(transform(num))
+    }
+    return result
 }
