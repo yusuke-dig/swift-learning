@@ -29,6 +29,11 @@
 //     repeatString(text: "Go")           → "GoGo"
 func repeatString(text: String, count: Int = 2) -> String {
     // ここに実装してください
+    var result: String = ""
+    for _ in 0..<count {
+        result += text
+    }
+    return result
 }
 
 // 課題2: swapInts(_:_:)
@@ -38,6 +43,9 @@ func repeatString(text: String, count: Int = 2) -> String {
 //   swapInts(&a, &b)   → a == 2, b == 1
 func swapInts(_ a: inout Int, _ b: inout Int) {
     // ここに実装してください
+    let tmp = a
+    a = b
+    b = tmp
 }
 
 // 課題3: clamp(_:lower:upper:)
@@ -47,4 +55,7 @@ func swapInts(_ a: inout Int, _ b: inout Int) {
 //     clamp(3,  lower: 0, upper: 5)  → 3
 func clamp(_ value: Int, lower: Int, upper: Int) -> Int {
     // ここに実装してください
+    guard value >= lower else { return lower }
+    guard value <= upper else { return upper }
+    return value
 }
