@@ -62,6 +62,9 @@
 | Day15 | 非同期処理 (async/await) | fetchMessage, parallelFetch |
 
 ## テスト合格を確認したとき
+- **`git status` で未コミットの変更がないか確認する**
+  - `Sources/SwiftLearning/DayXX/DayXX_{TopicName}.swift`（ユーザーの実装）がコミット漏れていないか必ずチェック
+  - 未コミットなら REVIEW.md・README.md と一緒に、または先にコミットする
 - 実装コードをレビューして `README.md` の `## レビュー記録` に `### DayXX Review` セクションを追加する
   - `Sources/SwiftLearning/DayXX/REVIEW.md` を作成する
   - 各課題ごとに「実装」と「より良い書き方（あれば）」をコードブロックで示す
