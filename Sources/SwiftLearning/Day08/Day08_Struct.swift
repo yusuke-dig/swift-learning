@@ -26,6 +26,9 @@ struct Point {
 
 func distance(from a: Point, to b: Point) -> Double {
     // ここに実装してください
+    let dx = b.x - a.x
+    let dy = b.y - a.y
+    return sqrt(dx * dx + dy * dy)
 }
 
 // ----------------------------------------
@@ -40,10 +43,12 @@ struct Rectangle {
 
     func area() -> Double {
         // ここに実装してください
+        width * height
     }
 
     func perimeter() -> Double {
         // ここに実装してください
+        2 * (width + height)
     }
 }
 
@@ -59,13 +64,16 @@ struct Stack {
 
     var isEmpty: Bool {
         // ここに実装してください
+        storage.isEmpty
     }
 
     mutating func push(_ value: Int) {
         // ここに実装してください
+        storage.append(value)
     }
 
     mutating func pop() -> Int? {
         // ここに実装してください
+        storage.popLast()
     }
 }
