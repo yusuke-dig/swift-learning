@@ -50,10 +50,14 @@ class Circle: Shape {
 
     init(color: String, radius: Double) {
         // ここに実装してください
+        self.radius = radius
+        super.init(color: color)
+//        self.radius = radius
     }
 
     override func area() -> Double {
         // ここに実装してください
+        Double.pi * pow(radius, 2)
     }
 }
 
@@ -69,10 +73,14 @@ class Rect: Shape {
 
     init(color: String, width: Double, height: Double) {
         // ここに実装してください
+        self.width = width
+        self.height = height
+        super.init(color: color)
     }
 
     override func area() -> Double {
         // ここに実装してください
+        width * height
     }
 }
 
@@ -83,4 +91,5 @@ class Rect: Shape {
 
 func isLarger(_ a: Shape, _ b: Shape) -> Shape {
     // ここに実装してください
+    a.area() >= b.area() ? a : b
 }
