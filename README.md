@@ -24,7 +24,7 @@ swift test --filter Day01
 | Day06 | 関数 | ✅ 完了 | 2026-04-25 | [レビュー](Sources/SwiftLearning/Day06/REVIEW.md) |
 | Day07 | クロージャ | ✅ 完了 | 2026-04-26 | [レビュー](Sources/SwiftLearning/Day07/REVIEW.md) |
 | Day08 | 構造体 | ✅ 完了 | 2026-04-27 | [レビュー](Sources/SwiftLearning/Day08/REVIEW.md) |
-| Day09 | クラスと継承 | ⬜ 未着手 | - | |
+| Day09 | クラスと継承 | ⬜ 未完了 | - | |
 | Day10 | プロトコル | ⬜ 未着手 | - | |
 | Day11 | エラー処理 | ⬜ 未着手 | - | |
 | Day12 | 列挙型 | ⬜ 未着手 | - | |
