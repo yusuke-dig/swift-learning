@@ -40,6 +40,7 @@ struct Book: Describable {
 
     func describe() -> String {
         // ここに実装してください
+        return "『\(title)』by \(author)"
     }
 }
 
@@ -64,10 +65,12 @@ struct Counter: Resettable {
 
     mutating func increment() {
         // ここに実装してください
+        self.count += 1
     }
 
     mutating func reset() {
         // ここに実装してください
+        self.count = 0
     }
 }
 
@@ -79,4 +82,5 @@ struct Counter: Resettable {
 
 func describeAll(_ items: [Describable]) -> String {
     // ここに実装してください
+    items.map { $0.describe() }.joined(separator: "\n")
 }
