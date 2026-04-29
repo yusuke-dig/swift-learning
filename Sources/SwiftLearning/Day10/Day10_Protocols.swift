@@ -1,7 +1,7 @@
 // Day10: プロトコル (protocol)
 //
 // プロトコルは「何ができるか」だけを定義する設計図。
-// 実装は채택した側（struct/class/enum）が行う。
+// 実装は採択した側（struct/class/enum）が行う。
 //
 // 基本構文:
 //   protocol Greetable {
