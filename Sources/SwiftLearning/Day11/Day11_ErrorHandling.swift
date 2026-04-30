@@ -43,6 +43,13 @@ enum MathError: Error {
 
 func parseTemperature(_ value: Double) throws -> Double {
     // ここに実装してください
+    if value < -273.15 {
+        throw TemperatureError.tooCold
+    } else if value > 1000.0 {
+        throw TemperatureError.tooHot
+    } else {
+        return value
+    }
 }
 
 // ── 課題2: safeSqrt ──────────────────────────────────────────
@@ -52,6 +59,8 @@ func parseTemperature(_ value: Double) throws -> Double {
 
 func safeSqrt(_ value: Double) throws -> Double {
     // ここに実装してください
+    guard value >= 0 else { throw MathError.negativeInput }
+    return sqrt(value)
 }
 
 // ── 課題3: describeTemperature ───────────────────────────────
@@ -63,4 +72,15 @@ func safeSqrt(_ value: Double) throws -> Double {
 
 func describeTemperature(_ value: Double) -> String {
     // ここに実装してください
+    do {
+        let result = try parseTemperature(value)
+        return "\(result)℃ は有効です"
+    } catch let error as TemperatureError {
+        switch error {
+            case .tooCold: return "低すぎます"
+            case .tooHot:  return "高すぎます"
+        }
+    } catch {
+        return "予期せぬエラー"
+    }
 }
