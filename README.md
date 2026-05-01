@@ -27,7 +27,7 @@ swift test --filter Day01
 | Day09 | クラスと継承 | ✅ 完了 | 2026-04-28 | [レビュー](Sources/SwiftLearning/Day09/REVIEW.md) |
 | Day10 | プロトコル | ✅ 完了 | 2026-04-29 | [レビュー](Sources/SwiftLearning/Day10/REVIEW.md) |
 | Day11 | エラー処理 | ✅ 完了 | 2026-04-30 | [レビュー](Sources/SwiftLearning/Day11/REVIEW.md) |
-| Day12 | 列挙型 | ⬜ 未着手 | - | |
+| Day12 | 列挙型 | ⬜ 未完了 | - | |
 | Day13 | 高階関数 | ⬜ 未着手 | - | |
 | Day14 | ジェネリクス | ⬜ 未着手 | - | |
 | Day15 | 非同期処理 | ⬜ 未着手 | - | |
