@@ -27,9 +27,15 @@
 
 enum Direction {
     case north, south, east, west
-
+    
     var opposite: Direction {
         // ここに実装してください
+        switch self {
+        case .north: return .south
+        case .south: return .north
+        case .east: return .west
+        case .west: return .east
+        }
     }
 }
 
@@ -44,9 +50,17 @@ enum Direction {
 
 enum Coin {
     case one, five, ten, fifty, hundred, fiveHundred
-
+    
     var value: Int {
         // ここに実装してください
+        switch self {
+        case .one: return 1
+        case .five: return 5
+        case .ten: return 10
+        case .fifty: return 50
+        case .hundred: return 100
+        case .fiveHundred: return 500
+        }
     }
 }
 
@@ -64,4 +78,9 @@ enum Figure {
 
 func area(of figure: Figure) -> Double {
     // ここに実装してください
+    switch figure {
+    case .circle(radius: let r): return .pi * r * r
+    case .rectangle(width: let w, height: let h): return w * h
+    case .triangle(base: let b, height: let h): return b * h / 2
+    }
 }
