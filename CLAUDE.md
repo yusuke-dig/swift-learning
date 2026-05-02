@@ -15,8 +15,9 @@
    - `Sources/SwiftLearning/DayXX/DayXX_{TopicName}.swift` (実装テンプレート)
    - `Tests/SwiftLearningTests/DayXX/DayXXTests.swift` (テスト)
 5. `README.md` の進捗表で該当Dayを `⬜ 未着手` → `⬜ 未完了` に更新する
-6. `swift build 2>&1` を実行してコンパイルエラーになることを確認する（RED確認）
-7. git add して適切なメッセージでコミットする
+6. `MEMORY.md` の進捗表で該当Dayを `⬜ 未着手` → `⬜ 未完了` に更新し、「次に作るのは」の行も更新する
+7. `swift build 2>&1` を実行してコンパイルエラーになることを確認する（RED確認）
+8. git add して適切なメッセージでコミットする
 
 ## 1日15分の時間配分
 
@@ -72,6 +73,7 @@
   - 改善点がない場合も「良かった点」を必ず書く
   - 進捗表の該当Dayのメモ列に `[レビュー](Sources/SwiftLearning/DayXX/REVIEW.md)` リンクを追加する
 - `README.md` の該当Dayを `✅ 完了` に更新し、完了日を記入してコミットする
+- `MEMORY.md` の該当Dayを `✅ 完了 (YYYY-MM-DD)` に更新し、「次に作るのは」の行を次のDayに更新する
 - コミットメッセージ: `Complete Day{XX}: {トピック名}`
 - `../dev-learning-logs/` に学習ログを書く（下記「dev-learning-logs 連携」参照）
 
