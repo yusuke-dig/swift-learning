@@ -18,6 +18,7 @@
 
 func doubleAll(_ numbers: [Int]) -> [Int] {
     // ここに実装してください
+    numbers.map { $0 * 2 }
 }
 
 // ── 課題2: onlyEven ──────────────────────────────────────────
@@ -26,6 +27,7 @@ func doubleAll(_ numbers: [Int]) -> [Int] {
 
 func onlyEven(_ numbers: [Int]) -> [Int] {
     // ここに実装してください
+    numbers.filter { $0.isMultiple(of: 2) }
 }
 
 // ── 課題3: sumAll ─────────────────────────────────────────────
@@ -34,4 +36,5 @@ func onlyEven(_ numbers: [Int]) -> [Int] {
 
 func sumAll(_ numbers: [Int]) -> Int {
     // ここに実装してください
+    numbers.reduce(0, { $0 + $1 })
 }
