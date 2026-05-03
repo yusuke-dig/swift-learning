@@ -23,20 +23,24 @@ struct Stack<T> {
 
     mutating func push(_ item: T) {
         // ここに実装してください
+        self.items.append(item)
     }
 
     // 末尾要素を取り出して削除する
     mutating func pop() -> T? {
         // ここに実装してください
+        self.items.popLast()
     }
 
     // 末尾要素を削除せず返す
     func peek() -> T? {
         // ここに実装してください
+        self.items.last
     }
 
     var isEmpty: Bool {
         // ここに実装してください
+        self.items.isEmpty
     }
 }
 
@@ -52,6 +56,7 @@ struct Stack<T> {
 
 func findFirst<T>(in array: [T], where predicate: (T) -> Bool) -> T? {
     // ここに実装してください
+    array.first(where: predicate)
 }
 
 // ─────────────────────────────────────────
@@ -66,4 +71,7 @@ func findFirst<T>(in array: [T], where predicate: (T) -> Bool) -> T? {
 
 func swapValues<T>(_ a: inout T, _ b: inout T) {
     // ここに実装してください
+    let evacuation = a
+    a = b
+    b = evacuation
 }

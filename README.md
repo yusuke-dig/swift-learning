@@ -29,6 +29,6 @@ swift test --filter Day01
 | Day11 | エラー処理 | ✅ 完了 | 2026-04-30 | [レビュー](Sources/SwiftLearning/Day11/REVIEW.md) |
 | Day12 | 列挙型 | ✅ 完了 | 2026-05-01 | [レビュー](Sources/SwiftLearning/Day12/REVIEW.md) |
 | Day13 | 高階関数 | ✅ 完了 | 2026-05-02 | [レビュー](Sources/SwiftLearning/Day13/REVIEW.md) |
-| Day14 | ジェネリクス | ⬜ 未完了 | - | |
+| Day14 | ジェネリクス | ✅ 完了 | 2026-05-03 | [レビュー](Sources/SwiftLearning/Day14/REVIEW.md) |
 | Day15 | 非同期処理 | ⬜ 未着手 | - | |
 
