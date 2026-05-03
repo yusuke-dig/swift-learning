@@ -33,7 +33,7 @@ struct Day08Tests {
     // 課題3: Stack
     @Test("Stackの基本操作")
     func testStack() {
-        var s = Stack()
+        var s = IntStack()
         #expect(s.isEmpty == true)
 
         s.push(1)

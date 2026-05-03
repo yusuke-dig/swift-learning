@@ -59,7 +59,7 @@ struct Rectangle {
 // push(_ value:) で追加、pop() で取り出し（空なら nil）、
 // isEmpty で空かどうかを返す
 
-struct Stack {
+struct IntStack {
     private var storage: [Int] = []
 
     var isEmpty: Bool {
