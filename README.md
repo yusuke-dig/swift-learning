@@ -31,4 +31,9 @@ swift test --filter Day01
 | Day13 | 高階関数 | ✅ 完了 | 2026-05-02 | [レビュー](Sources/SwiftLearning/Day13/REVIEW.md) |
 | Day14 | ジェネリクス | ✅ 完了 | 2026-05-03 | [レビュー](Sources/SwiftLearning/Day14/REVIEW.md) |
 | Day15 | 非同期処理 | ✅ 完了 | 2026-05-04 | [レビュー](Sources/SwiftLearning/Day15/REVIEW.md) |
+| Day16 | Equatable / Comparable / Hashable | ⬜ 未着手 | - | |
+| Day17 | Codable (JSON) | ⬜ 未着手 | - | |
+| Day18 | some / any (不透明型・存在型) | ⬜ 未着手 | - | |
+| Day19 | Result<T, E> 型 | ⬜ 未着手 | - | |
+| Day20 | @propertyWrapper | ⬜ 未着手 | - | |
 

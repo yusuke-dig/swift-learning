@@ -22,8 +22,13 @@
 | Day13 | 高階関数 | ✅ 完了 (2026-05-02) |
 | Day14 | ジェネリクス | ✅ 完了 (2026-05-03) |
 | Day15 | 非同期処理 | ✅ 完了 (2026-05-04) |
+| Day16 | Equatable / Comparable / Hashable | ⬜ 未着手 |
+| Day17 | Codable (JSON) | ⬜ 未着手 |
+| Day18 | some / any (不透明型・存在型) | ⬜ 未着手 |
+| Day19 | Result<T, E> 型 | ⬜ 未着手 |
+| Day20 | @propertyWrapper | ⬜ 未着手 |
 
-次に作るのは **Day16 以降（カリキュラム終了）**。
+次に作るのは **Day16: Equatable / Comparable / Hashable**。
 
 ## 関連ディレクトリ
 - 実装: `Sources/SwiftLearning/DayXX/`

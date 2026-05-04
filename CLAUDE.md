@@ -62,6 +62,11 @@
 | Day13 | 高階関数 (map/filter/reduce) | doubleAll, onlyEven, sumAll |
 | Day14 | ジェネリクス | Stack<T>, findFirst |
 | Day15 | 非同期処理 (async/await) | fetchMessage, parallelFetch |
+| Day16 | Equatable / Comparable / Hashable | isEqual, comparePoints, uniqueElements |
+| Day17 | Codable (JSON) | User構造体のエンコード・デコード |
+| Day18 | some / any (不透明型・存在型) | makeShape, describeAll |
+| Day19 | Result<T, E> 型 | parseScore, safeFetch |
+| Day20 | @propertyWrapper | @Clamped, @Trimmed |
 
 ## テスト合格を確認したとき
 - **`git status` で未コミットの変更がないか確認する**
