@@ -30,5 +30,5 @@ swift test --filter Day01
 | Day12 | 列挙型 | ✅ 完了 | 2026-05-01 | [レビュー](Sources/SwiftLearning/Day12/REVIEW.md) |
 | Day13 | 高階関数 | ✅ 完了 | 2026-05-02 | [レビュー](Sources/SwiftLearning/Day13/REVIEW.md) |
 | Day14 | ジェネリクス | ✅ 完了 | 2026-05-03 | [レビュー](Sources/SwiftLearning/Day14/REVIEW.md) |
-| Day15 | 非同期処理 | ⬜ 未着手 | - | |
+| Day15 | 非同期処理 | ⬜ 未完了 | - | |
 
