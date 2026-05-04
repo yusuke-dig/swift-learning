@@ -67,6 +67,26 @@
 | Day18 | some / any (不透明型・存在型) | makeShape, describeAll |
 | Day19 | Result<T, E> 型 | parseScore, safeFetch |
 | Day20 | @propertyWrapper | @Clamped, @Trimmed |
+| Day21 | @Observable / ObservableObject | CounterModel, TodoModel |
+| Day22 | Combine 入門 (Publisher/Subscriber) | Just, PassthroughSubject, sink |
+| Day23 | Actor / Sendable | Counter actor, SafeCache |
+| Day24 | SwiftUI: View / Text / VStack / HStack | プロフィールカード画面 ※Xcodeプロジェクト |
+| Day25 | SwiftUI: @State / @Binding | カウンター, トグルフォーム |
+| Day26 | SwiftUI: List / ForEach / NavigationStack | Todoリスト画面 |
+| Day27 | SwiftUI: Button / TextField / Form | 設定画面 |
+| Day28 | SwiftUI: @Environment / @EnvironmentObject | テーマ切替 |
+| Day29 | UIKit: UIViewController / UILabel / UIButton | プロフィール画面 ※Xcodeプロジェクト |
+| Day30 | UIKit: Auto Layout / NSLayoutConstraint | レイアウト練習 |
+| Day31 | UIKit: UITableView | リスト表示 |
+| Day32 | UIKit: UINavigationController | 画面遷移 |
+
+## ディレクトリ構成（Day24以降）
+
+Day01〜Day23 は `Sources/SwiftLearning/` 配下（SPM）。
+Day24〜Day28 は `SwiftUILearning/` 配下（Xcodeプロジェクト）。
+Day29〜Day32 は `UIKitLearning/` 配下（Xcodeプロジェクト）。
+
+Xcodeプロジェクトは該当Dayに入るタイミングで作成する。
 
 ## テスト合格を確認したとき
 - **`git status` で未コミットの変更がないか確認する**

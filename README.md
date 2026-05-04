@@ -36,4 +36,16 @@ swift test --filter Day01
 | Day18 | some / any (不透明型・存在型) | ⬜ 未着手 | - | |
 | Day19 | Result<T, E> 型 | ⬜ 未着手 | - | |
 | Day20 | @propertyWrapper | ⬜ 未着手 | - | |
+| Day21 | @Observable / ObservableObject | ⬜ 未着手 | - | |
+| Day22 | Combine 入門 | ⬜ 未着手 | - | |
+| Day23 | Actor / Sendable | ⬜ 未着手 | - | |
+| Day24 | SwiftUI: View / Text / Stack | ⬜ 未着手 | - | Xcodeプロジェクト |
+| Day25 | SwiftUI: @State / @Binding | ⬜ 未着手 | - | |
+| Day26 | SwiftUI: List / ForEach / Navigation | ⬜ 未着手 | - | |
+| Day27 | SwiftUI: Button / TextField / Form | ⬜ 未着手 | - | |
+| Day28 | SwiftUI: @Environment / @EnvironmentObject | ⬜ 未着手 | - | |
+| Day29 | UIKit: UIViewController / UILabel / UIButton | ⬜ 未着手 | - | Xcodeプロジェクト |
+| Day30 | UIKit: Auto Layout | ⬜ 未着手 | - | |
+| Day31 | UIKit: UITableView | ⬜ 未着手 | - | |
+| Day32 | UIKit: UINavigationController | ⬜ 未着手 | - | |
 

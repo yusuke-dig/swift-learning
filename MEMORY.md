@@ -27,8 +27,25 @@
 | Day18 | some / any (不透明型・存在型) | ⬜ 未着手 |
 | Day19 | Result<T, E> 型 | ⬜ 未着手 |
 | Day20 | @propertyWrapper | ⬜ 未着手 |
+| Day21 | @Observable / ObservableObject | ⬜ 未着手 |
+| Day22 | Combine 入門 | ⬜ 未着手 |
+| Day23 | Actor / Sendable | ⬜ 未着手 |
+| Day24 | SwiftUI: View / Text / Stack | ⬜ 未着手 |
+| Day25 | SwiftUI: @State / @Binding | ⬜ 未着手 |
+| Day26 | SwiftUI: List / ForEach / Navigation | ⬜ 未着手 |
+| Day27 | SwiftUI: Button / TextField / Form | ⬜ 未着手 |
+| Day28 | SwiftUI: @Environment / @EnvironmentObject | ⬜ 未着手 |
+| Day29 | UIKit: UIViewController / UILabel / UIButton | ⬜ 未着手 |
+| Day30 | UIKit: Auto Layout | ⬜ 未着手 |
+| Day31 | UIKit: UITableView | ⬜ 未着手 |
+| Day32 | UIKit: UINavigationController | ⬜ 未着手 |
 
 次に作るのは **Day16: Equatable / Comparable / Hashable**。
+
+## ディレクトリ構成
+- Day01〜Day23: `Sources/SwiftLearning/DayXX/`（SPM、swift testで完結）
+- Day24〜Day28: `SwiftUILearning/`（Xcodeプロジェクト、Day24到達時に作成）
+- Day29〜Day32: `UIKitLearning/`（Xcodeプロジェクト、Day29到達時に作成）
 
 ## 関連ディレクトリ
 - 実装: `Sources/SwiftLearning/DayXX/`
