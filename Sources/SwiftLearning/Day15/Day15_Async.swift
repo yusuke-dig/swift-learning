@@ -20,6 +20,7 @@
 
 func fetchGreeting(name: String) async -> String {
     // ここに実装してください
+    "Hello, \(name)!"
 }
 
 // ─────────────────────────────────────────
@@ -34,6 +35,11 @@ func fetchGreeting(name: String) async -> String {
 
 func fetchAll(names: [String]) async -> [String] {
     // ここに実装してください
+    var result: [String] = []
+    for name in names {
+        result.append(await fetchGreeting(name: name))
+    }
+    return result
 }
 
 // ─────────────────────────────────────────
@@ -48,4 +54,6 @@ func fetchAll(names: [String]) async -> [String] {
 
 func fetchPair(first: String, second: String) async -> (String, String) {
     // ここに実装してください
+    let (greeting1, greeting2) = (await fetchGreeting(name: first), await fetchGreeting(name: second))
+    return (greeting1, greeting2)
 }
