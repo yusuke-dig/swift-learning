@@ -43,16 +43,25 @@ struct Product: Codable, Equatable {
     let price: Double
 }
 
+
 // MARK: - 課題1: User をエンコードして JSON 文字列を返す
 // ヒント: JSONEncoder().encode() → Data → String(data:encoding:)
 func encodeUser(_ user: User) throws -> String {
     // ここに実装してください
+    let data = try JSONEncoder().encode(user)
+    guard let jsonString = String(data: data, encoding: .utf8) else {
+        throw EncodingError.invalidValue(user, .init(codingPath: [], debugDescription: "Failed to convert Data to String"))
+    }
+    return jsonString
 }
 
 // MARK: - 課題2: JSON 文字列から User をデコードして返す
 // ヒント: JSONDecoder().decode(User.self, from: data)
 func decodeUser(from json: String) throws -> User {
     // ここに実装してください
+    let data = Data(json.utf8)
+    let user = try JSONDecoder().decode(User.self, from: data)
+    return user
 }
 
 // MARK: - 課題3: Product を snakeCase の JSON にエンコードして返す
@@ -60,4 +69,11 @@ func decodeUser(from json: String) throws -> User {
 // 結果例: {"product_id":1,"product_name":"Swift Book","price":2980.0}
 func encodeProductAsSnakeCase(_ product: Product) throws -> String {
     // ここに実装してください
+    let encoder = JSONEncoder()
+    encoder.keyEncodingStrategy = .convertToSnakeCase
+    let data = try encoder.encode(product)
+    guard let jsonString = String(data: data, encoding: .utf8) else {
+        throw EncodingError.invalidValue(product, .init(codingPath: [], debugDescription: "Failed to convert Data to String"))
+    }
+    return jsonString
 }
