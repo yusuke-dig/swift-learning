@@ -22,7 +22,7 @@
 | Day13 | 高階関数 | ✅ 完了 (2026-05-02) |
 | Day14 | ジェネリクス | ✅ 完了 (2026-05-03) |
 | Day15 | 非同期処理 | ✅ 完了 (2026-05-04) |
-| Day16 | Equatable / Comparable / Hashable | ⬜ 未着手 |
+| Day16 | Equatable / Comparable / Hashable | ✅ 完了 (2026-05-05) |
 | Day17 | Codable (JSON) | ⬜ 未着手 |
 | Day18 | some / any (不透明型・存在型) | ⬜ 未着手 |
 | Day19 | Result<T, E> 型 | ⬜ 未着手 |
@@ -40,7 +40,7 @@
 | Day31 | UIKit: UITableView | ⬜ 未着手 |
 | Day32 | UIKit: UINavigationController | ⬜ 未着手 |
 
-次に作るのは **Day16: Equatable / Comparable / Hashable**。
+次に作るのは **Day17: Codable (JSON)**。
 
 ## ディレクトリ構成
 - Day01〜Day23: `Sources/SwiftLearning/DayXX/`（SPM、swift testで完結）

@@ -55,6 +55,7 @@ struct Point16: Equatable, Comparable, Hashable {
 
 func isEqual<T: Equatable>(_ a: T, _ b: T) -> Bool {
     // ここに実装してください
+    a == b
 }
 
 // ----------------------------------------
@@ -67,6 +68,10 @@ func isEqual<T: Equatable>(_ a: T, _ b: T) -> Bool {
 
 func comparePoints(_ lhs: Point16, _ rhs: Point16) -> String {
     // ここに実装してください
+    if lhs < rhs { return "less" }
+    if lhs == rhs { return "equal" }
+    if lhs > rhs { return "greater" }
+    return "unkwnon"
 }
 
 // ----------------------------------------
@@ -78,4 +83,5 @@ func comparePoints(_ lhs: Point16, _ rhs: Point16) -> String {
 
 func uniqueElements<T: Hashable>(_ array: [T]) -> [T] {
     // ここに実装してください
+    return Array(Set(array))
 }
