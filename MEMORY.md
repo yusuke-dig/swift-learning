@@ -24,7 +24,7 @@
 | Day15 | 非同期処理 | ✅ 完了 (2026-05-04) |
 | Day16 | Equatable / Comparable / Hashable | ✅ 完了 (2026-05-05) |
 | Day17 | Codable (JSON) | ✅ 完了 (2026-05-06) |
-| Day18 | some / any (不透明型・存在型) | ⬜ 未着手 |
+| Day18 | some / any (不透明型・存在型) | ⬜ 未完了 |
 | Day19 | Result<T, E> 型 | ⬜ 未着手 |
 | Day20 | @propertyWrapper | ⬜ 未着手 |
 | Day21 | @Observable / ObservableObject | ⬜ 未着手 |
@@ -40,7 +40,7 @@
 | Day31 | UIKit: UITableView | ⬜ 未着手 |
 | Day32 | UIKit: UINavigationController | ⬜ 未着手 |
 
-次に作るのは **Day18: some / any (不透明型・存在型)**。
+次に作るのは **Day19: Result<T, E> 型**。
 
 ## ディレクトリ構成
 - Day01〜Day23: `Sources/SwiftLearning/DayXX/`（SPM、swift testで完結）
