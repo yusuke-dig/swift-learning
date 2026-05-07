@@ -55,6 +55,7 @@ struct D18Triangle: D18Shape {
 
 func makeCircle(radius: Double) -> some D18Shape {
     // ここに実装してください
+    D18Circle(radius: radius)
 }
 
 // -----------------------------------------------------------
@@ -64,6 +65,7 @@ func makeCircle(radius: Double) -> some D18Shape {
 
 func sortedByArea(_ shapes: [any D18Shape]) -> [any D18Shape] {
     // ここに実装してください
+    shapes.sorted { $0.area() > $1.area() }
 }
 
 // -----------------------------------------------------------
@@ -73,4 +75,5 @@ func sortedByArea(_ shapes: [any D18Shape]) -> [any D18Shape] {
 
 func shapeNames(_ shapes: [any D18Shape]) -> [String] {
     // ここに実装してください
+    shapes.map { $0.name() }
 }

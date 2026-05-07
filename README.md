@@ -33,7 +33,7 @@ swift test --filter Day01
 | Day15 | 非同期処理 | ✅ 完了 | 2026-05-04 | [レビュー](Sources/SwiftLearning/Day15/REVIEW.md) |
 | Day16 | Equatable / Comparable / Hashable | ✅ 完了 | 2026-05-05 | [レビュー](Sources/SwiftLearning/Day16/REVIEW.md) |
 | Day17 | Codable (JSON) | ✅ 完了 | 2026-05-06 | [レビュー](Sources/SwiftLearning/Day17/REVIEW.md) |
-| Day18 | some / any (不透明型・存在型) | ⬜ 未完了 | - | |
+| Day18 | some / any (不透明型・存在型) | ✅ 完了 | 2026-05-07 | [レビュー](Sources/SwiftLearning/Day18/REVIEW.md) |
 | Day19 | Result<T, E> 型 | ⬜ 未着手 | - | |
 | Day20 | @propertyWrapper | ⬜ 未着手 | - | |
 | Day21 | @Observable / ObservableObject | ⬜ 未着手 | - | |
