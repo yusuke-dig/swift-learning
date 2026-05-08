@@ -43,6 +43,9 @@ enum FetchError: Error, Equatable {
 // 変換できない場合は .notANumber、範囲外は .outOfRange を返す。
 func parseScore(_ input: String) -> Result<Int, ScoreError> {
     // ここに実装してください
+    guard let score = Int(input) else { return .failure(.notANumber) }
+    guard (0...100).contains(score) else { return .failure(.outOfRange) }
+    return .success(score)
 }
 
 // ---- 課題 2 ----
@@ -51,6 +54,9 @@ func parseScore(_ input: String) -> Result<Int, ScoreError> {
 // IDが "secret" の場合は .unauthorized を返す。
 func safeFetch(id: String, from store: [String: String]) -> Result<String, FetchError> {
     // ここに実装してください
+    if id == "secret" { return .failure(.unauthorized) }
+    guard let value = store[id] else { return .failure(.notFound) }
+    return .success(value)
 }
 
 // ---- 課題 3 ----
@@ -62,4 +68,15 @@ func safeFetch(id: String, from store: [String: String]) -> Result<String, Fetch
 // ヒント: switch や map/flatMap は使わず、get() + do-catch でも書ける
 func fetchAndParseScore(id: String, from store: [String: String]) -> String {
     // ここに実装してください
+    do {
+        let safeValue = try safeFetch(id: id, from: store).get()
+        let score = try parseScore(safeValue).get()
+        return "OK: \(score)"
+    } catch let err as ScoreError {
+        return "\(err)"
+    } catch let err as FetchError {
+        return "\(err)"
+    } catch {
+        return "unknown error"
+    }
 }
