@@ -33,6 +33,7 @@ struct Clamped {
         get { value }
         set {
             // ここに実装してください
+            value = Swift.max(min, Swift.min(max, newValue))
         }
     }
 
@@ -40,7 +41,7 @@ struct Clamped {
         self.min = min
         self.max = max
         // ここに実装してください
-        self.value = 0 // 仮置き（削除して正しく実装する）
+        self.value = Swift.max(min, Swift.min(max, wrappedValue))
     }
 }
 
@@ -56,11 +57,13 @@ struct Trimmed {
         get { value }
         set {
             // ここに実装してください
+            value = newValue.trimmingCharacters(in: .whitespacesAndNewlines)
         }
     }
 
     init(wrappedValue: String) {
         // ここに実装してください
+        self.value = wrappedValue.trimmingCharacters(in: .whitespacesAndNewlines)
     }
 }
 
@@ -83,6 +86,8 @@ struct ClampedWithProjection {
         get { value }
         set {
             // ここに実装してください
+            value = Swift.max(min, Swift.min(max, newValue))
+            projectedValue = newValue < min || newValue > max
         }
     }
 
@@ -90,6 +95,7 @@ struct ClampedWithProjection {
         self.min = min
         self.max = max
         // ここに実装してください
-        self.value = 0 // 仮置き（削除して正しく実装する）
+        value = Swift.max(min, Swift.min(max, wrappedValue))
+        projectedValue = wrappedValue < min || wrappedValue > max
     }
 }
