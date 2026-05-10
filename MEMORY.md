@@ -28,7 +28,7 @@
 | Day19 | Result<T, E> 型 | ✅ 完了 (2026-05-08) |
 | Day20 | @propertyWrapper | ✅ 完了 (2026-05-09) |
 | Day21 | @Observable / ObservableObject | ✅ 完了 (2026-05-10) |
-| Day22 | Combine 入門 | ⬜ 未完了 |
+| Day22 | Combine 入門 | ✅ 完了 (2026-05-11) |
 | Day23 | Actor / Sendable | ⬜ 未着手 |
 | Day24 | SwiftUI: View / Text / Stack | ⬜ 未着手 |
 | Day25 | SwiftUI: @State / @Binding | ⬜ 未着手 |

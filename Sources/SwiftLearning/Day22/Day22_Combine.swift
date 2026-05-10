@@ -36,6 +36,13 @@ import Combine
 func collectFromSequence() -> [Int] {
     var results: [Int] = []
     // ここに実装してください
+    let cancellable = Publishers.Sequence(sequence: [1, 2, 3])
+        .sink { value in
+            results.append(value)
+        }
+    
+    _ = cancellable
+    
     return results
 }
 
@@ -49,6 +56,19 @@ func collectFromSequence() -> [Int] {
 func sendWithSubject() -> [String] {
     var results: [String] = []
     // ここに実装してください
+    let subject = PassthroughSubject<String, Never>()
+    
+    let cancellable = subject
+        .sink(receiveValue: { value in
+            results.append(value)
+        })
+    
+    subject.send("Hello")
+    subject.send("Combine")
+    subject.send("World")
+    
+    _ = cancellable
+    
     return results
 }
 
@@ -62,5 +82,15 @@ func sendWithSubject() -> [String] {
 func mapAndFilter() -> [Int] {
     var results: [Int] = []
     // ここに実装してください
+    
+    let cancellable = Publishers.Sequence(sequence: 1...10)
+        .map { $0 * 2 }
+        .filter { $0 > 10 }
+        .sink(receiveValue: { value in
+            results.append(value)
+        })
+    
+    _ = cancellable
+    
     return results
 }
