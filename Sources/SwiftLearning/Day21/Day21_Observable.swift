@@ -33,6 +33,21 @@ import Observation  // @Observable に必要
 
 // ここに実装してください
 
+@available(macOS 14.0, *)
+@Observable
+class CounterModel {
+    var count: Int = 0
+    
+    func increment() {
+        count += 1
+    }
+    
+    func decrement() {
+        guard count > 0 else { return }
+        count -= 1
+    }
+}
+
 
 // ─────────────────────────────────────────
 // 課題2: TodoModel を実装する
@@ -43,6 +58,22 @@ import Observation  // @Observable に必要
 // ─────────────────────────────────────────
 
 // ここに実装してください
+
+@available(macOS 14.0, *)
+@Observable
+class TodoModel {
+    var items: [String] = []
+    
+    func addItem(_ item: String) {
+        guard !item.isEmpty else { return }
+        items.append(item)
+    }
+    
+    func removeItem(at: Int) {
+        guard items.indices.contains(at) else { return }
+        items.remove(at: at)
+    }
+}
 
 
 // ─────────────────────────────────────────
@@ -55,3 +86,19 @@ import Observation  // @Observable に必要
 // ─────────────────────────────────────────
 
 // ここに実装してください
+
+
+@available(macOS 10.15, *)
+class ScoreModel: ObservableObject {
+    @Published var scores: [Int] = []
+    
+    func addScore(_ score: Int) {
+        guard (0...100) ~= score else { return }
+        scores.append(score)
+    }
+    
+    func average() -> Double {
+        guard !scores.isEmpty else { return 0.0 }
+        return scores.reduce(0.0) { $0 + Double($1) } / Double(scores.count)
+    }
+}
