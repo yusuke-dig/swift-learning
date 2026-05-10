@@ -37,7 +37,7 @@ swift test --filter Day01
 | Day19 | Result<T, E> 型 | ✅ 完了 | 2026-05-08 | [レビュー](Sources/SwiftLearning/Day19/REVIEW.md) |
 | Day20 | @propertyWrapper | ✅ 完了 | 2026-05-09 | [レビュー](Sources/SwiftLearning/Day20/REVIEW.md) |
 | Day21 | @Observable / ObservableObject | ✅ 完了 | 2026-05-10 | [レビュー](Sources/SwiftLearning/Day21/REVIEW.md) |
-| Day22 | Combine 入門 | ⬜ 未着手 | - | |
+| Day22 | Combine 入門 | ⬜ 未完了 | - | |
 | Day23 | Actor / Sendable | ⬜ 未着手 | - | |
 | Day24 | SwiftUI: View / Text / Stack | ⬜ 未着手 | - | Xcodeプロジェクト |
 | Day25 | SwiftUI: @State / @Binding | ⬜ 未着手 | - | |
