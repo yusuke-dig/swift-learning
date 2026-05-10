@@ -3,6 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "SwiftLearning",
+    platforms: [.macOS(.v14)],
     targets: [
         .target(
             name: "SwiftLearning",

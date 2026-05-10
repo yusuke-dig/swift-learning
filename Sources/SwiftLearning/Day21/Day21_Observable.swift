@@ -33,7 +33,6 @@ import Observation  // @Observable に必要
 
 // ここに実装してください
 
-@available(macOS 14.0, *)
 @Observable
 class CounterModel {
     var count: Int = 0
@@ -59,7 +58,6 @@ class CounterModel {
 
 // ここに実装してください
 
-@available(macOS 14.0, *)
 @Observable
 class TodoModel {
     var items: [String] = []
@@ -88,7 +86,6 @@ class TodoModel {
 // ここに実装してください
 
 
-@available(macOS 10.15, *)
 class ScoreModel: ObservableObject {
     @Published var scores: [Int] = []
     
