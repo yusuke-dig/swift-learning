@@ -36,15 +36,17 @@ actor SafeCounter {
 
     func increment() {
         // ここに実装してください
+        count += 1
     }
 
     func decrement() {
         // ここに実装してください
+        count -= 1
     }
 
     var value: Int {
         // ここに実装してください
-        return 0
+        return count
     }
 }
 
@@ -60,15 +62,17 @@ actor SafeCache<Key: Hashable, Value> {
 
     func store(key: Key, value: Value) {
         // ここに実装してください
+        storage[key] = value
     }
 
     func fetch(key: Key) -> Value? {
         // ここに実装してください
-        return nil
+        return storage[key]
     }
 
     func clear() {
         // ここに実装してください
+        storage.removeAll()
     }
 }
 
@@ -80,5 +84,12 @@ actor SafeCache<Key: Hashable, Value> {
 // -------------------------------------------------------
 func parallelSum(a: [Int], b: [Int]) async -> Int {
     // ここに実装してください
-    return 0
+    func sum(_ arr: [Int]) -> Int {
+        arr.reduce(0, +)
+    }
+    
+    async let sumA = sum(a)
+    async let sumB = sum(b)
+    
+    return await sumA + sumB
 }
