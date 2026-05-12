@@ -29,7 +29,7 @@
 | Day20 | @propertyWrapper | ✅ 完了 (2026-05-09) |
 | Day21 | @Observable / ObservableObject | ✅ 完了 (2026-05-10) |
 | Day22 | Combine 入門 | ✅ 完了 (2026-05-11) |
-| Day23 | Actor / Sendable | ⬜ 未着手 |
+| Day23 | Actor / Sendable | ⬜ 未完了 |
 | Day24 | SwiftUI: View / Text / Stack | ⬜ 未着手 |
 | Day25 | SwiftUI: @State / @Binding | ⬜ 未着手 |
 | Day26 | SwiftUI: List / ForEach / Navigation | ⬜ 未着手 |
@@ -40,7 +40,7 @@
 | Day31 | UIKit: UITableView | ⬜ 未着手 |
 | Day32 | UIKit: UINavigationController | ⬜ 未着手 |
 
-次に作るのは **Day23: Actor / Sendable**。
+次に作るのは **Day24: SwiftUI: View / Text / Stack**。
 
 ## ディレクトリ構成
 - Day01〜Day23: `Sources/SwiftLearning/DayXX/`（SPM、swift testで完結）
