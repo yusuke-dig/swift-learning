@@ -2,27 +2,32 @@ import Testing
 import SwiftUI
 @testable import SwiftUILearning
 
+// SwiftUIのViewは body の内部をユニットテストで直接検証するのが難しい。
+// 実務では「Viewは薄く、ロジックはViewModel」にしてViewModelをテストするのが主流。
+// Day24はレイアウトのみなので、「ビューが正しいデータを保持しているか」を検証する。
+// 見た目の確認は Xcode の #Preview を使うこと。
+
 @Suite("Day24: SwiftUI View / Text / Stack")
 struct Day24Tests {
 
-    // 各ビューが View プロトコルを満たしていれば合格
-    // 実際の見た目は Xcode の Preview で確認してください
-
-    @Test("課題1: GreetingView が View として使える")
+    @Test("課題1: GreetingView が name を保持している")
     func greetingView() {
         let view = GreetingView(name: "Swift")
-        let _: any View = view
+        #expect(view.name == "Swift")
     }
 
-    @Test("課題2: ProfileInfoView が View として使える")
+    @Test("課題2: ProfileInfoView が name と role を保持している")
     func profileInfoView() {
         let view = ProfileInfoView(name: "山田 太郎", role: "iOSエンジニア")
-        let _: any View = view
+        #expect(view.name == "山田 太郎")
+        #expect(view.role == "iOSエンジニア")
     }
 
-    @Test("課題3: ProfileCardView が View として使える")
+    @Test("課題3: ProfileCardView が name / role / initial を保持している")
     func profileCardView() {
         let view = ProfileCardView(name: "山田 太郎", role: "iOSエンジニア", initial: "山")
-        let _: any View = view
+        #expect(view.name == "山田 太郎")
+        #expect(view.role == "iOSエンジニア")
+        #expect(view.initial == "山")
     }
 }
