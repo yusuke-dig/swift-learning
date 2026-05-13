@@ -33,9 +33,11 @@ import SwiftUI
 // - name を受け取り「こんにちは、{name}さん！」を .title フォントで表示する
 struct GreetingView: View {
     let name: String
-
+    
     var body: some View {
         // ここに実装してください
+        Text("こんにちは、\(name)さん！")
+            .font(.title)
     }
 }
 
@@ -46,9 +48,16 @@ struct GreetingView: View {
 struct ProfileInfoView: View {
     let name: String
     let role: String
-
+    
     var body: some View {
         // ここに実装してください
+        VStack(alignment: .leading, spacing: 4) {
+            Text(name)
+                .font(.headline)
+            Text(role)
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+        }
     }
 }
 
@@ -62,9 +71,22 @@ struct ProfileCardView: View {
     let name: String
     let role: String
     let initial: String
-
+    
     var body: some View {
         // ここに実装してください
+        HStack(spacing: 12) {
+            Text(initial)
+                .font(.largeTitle)
+                .frame(width: 60, height: 60)
+                .background(Color.blue.opacity(0.2))
+                .clipShape(.circle)
+
+            ProfileInfoView(name: name, role: role)
+        }
+        .padding()
+        .background(.white)
+        .cornerRadius(12)
+        .shadow(radius: 4)
     }
 }
 

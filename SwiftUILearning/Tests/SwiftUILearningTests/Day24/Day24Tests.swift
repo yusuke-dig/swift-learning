@@ -7,6 +7,7 @@ import SwiftUI
 // Day24はレイアウトのみなので、「ビューが正しいデータを保持しているか」を検証する。
 // 見た目の確認は Xcode の #Preview を使うこと。
 
+@MainActor
 @Suite("Day24: SwiftUI View / Text / Stack")
 struct Day24Tests {
 
