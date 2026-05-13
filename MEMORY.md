@@ -39,6 +39,10 @@
 | Day30 | UIKit: Auto Layout | ⬜ 未着手 |
 | Day31 | UIKit: UITableView | ⬜ 未着手 |
 | Day32 | UIKit: UINavigationController | ⬜ 未着手 |
+| Day33 | TCA 入門: Store / State / Action / Reducer | ⬜ 未着手 |
+| Day34 | TCA: Effect / async | ⬜ 未着手 |
+| Day35 | TCA: Dependency / テスト | ⬜ 未着手 |
+| Day36 | TCA: 画面遷移 / StackState | ⬜ 未着手 |
 
 次に作るのは **Day25: SwiftUI: @State / @Binding**。
 

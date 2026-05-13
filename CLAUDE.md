@@ -79,12 +79,17 @@
 | Day30 | UIKit: Auto Layout / NSLayoutConstraint | レイアウト練習 |
 | Day31 | UIKit: UITableView | リスト表示 |
 | Day32 | UIKit: UINavigationController | 画面遷移 |
+| Day33 | TCA 入門: Store / State / Action / Reducer | カウンターアプリ ※SwiftUILearning に追加 |
+| Day34 | TCA: Effect / async | データ取得・キャンセル |
+| Day35 | TCA: Dependency / テスト | DI・Reducer ユニットテスト |
+| Day36 | TCA: 画面遷移 / StackState | 画面スタック管理 |
 
 ## ディレクトリ構成（Day24以降）
 
 Day01〜Day23 は `Sources/SwiftLearning/` 配下（SPM）。
 Day24〜Day28 は `SwiftUILearning/` 配下（Xcodeプロジェクト）。
 Day29〜Day32 は `UIKitLearning/` 配下（Xcodeプロジェクト）。
+Day33〜Day36 は `SwiftUILearning/` 配下（TCA を Package.swift に依存追加）。
 
 Xcodeプロジェクトは該当Dayに入るタイミングで作成する。
 
