@@ -39,7 +39,7 @@ swift test --filter Day01
 | Day21 | @Observable / ObservableObject | ✅ 完了 | 2026-05-10 | [レビュー](Sources/SwiftLearning/Day21/REVIEW.md) |
 | Day22 | Combine 入門 | ✅ 完了 | 2026-05-11 | [レビュー](Sources/SwiftLearning/Day22/REVIEW.md) |
 | Day23 | Actor / Sendable | ✅ 完了 | 2026-05-12 | [レビュー](Sources/SwiftLearning/Day23/REVIEW.md) |
-| Day24 | SwiftUI: View / Text / Stack | ⬜ 未着手 | - | Xcodeプロジェクト |
+| Day24 | SwiftUI: View / Text / Stack | ⬜ 未完了 | - | Xcodeプロジェクト |
 | Day25 | SwiftUI: @State / @Binding | ⬜ 未着手 | - | |
 | Day26 | SwiftUI: List / ForEach / Navigation | ⬜ 未着手 | - | |
 | Day27 | SwiftUI: Button / TextField / Form | ⬜ 未着手 | - | |
