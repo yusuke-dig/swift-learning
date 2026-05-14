@@ -29,9 +29,14 @@ import SwiftUI
 // - 3つを HStack で横並びにする
 struct CounterView: View {
     @State var count: Int = 0
-
+    
     var body: some View {
         // ここに実装してください
+        HStack {
+            Button(action: { count -= 1 }, label: { Text("-") })
+            Text("\(count)")
+            Button(action: { count += 1 }, label: { Text("+") })
+        }
     }
 }
 
@@ -42,9 +47,14 @@ struct CounterView: View {
 // - VStack で縦並び・padding() を付ける
 struct ToggleFormView: View {
     @State var isEnabled: Bool = false
-
+    
     var body: some View {
         // ここに実装してください
+        VStack {
+            Toggle("通知を受け取る", isOn: $isEnabled)
+            Text(isEnabled ? "ON" : "OFF")
+        }
+        .padding()
     }
 }
 
@@ -55,9 +65,13 @@ struct ToggleFormView: View {
 // - VStack で縦並び・spacing: 12
 struct StepperChildView: View {
     @Binding var value: Int
-
+    
     var body: some View {
         // ここに実装してください
+        VStack(spacing: 12) {
+            Button("タップで +1") { value += 1 }
+            Text("現在値: \(value)")
+        }
     }
 }
 

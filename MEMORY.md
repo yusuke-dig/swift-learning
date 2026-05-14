@@ -31,7 +31,7 @@
 | Day22 | Combine 入門 | ✅ 完了 (2026-05-11) |
 | Day23 | Actor / Sendable | ✅ 完了 (2026-05-12) |
 | Day24 | SwiftUI: View / Text / Stack | ✅ 完了 (2026-05-13) |
-| Day25 | SwiftUI: @State / @Binding | ⬜ 未完了 |
+| Day25 | SwiftUI: @State / @Binding | ✅ 完了 (2026-05-14) |
 | Day26 | SwiftUI: List / ForEach / Navigation | ⬜ 未着手 |
 | Day27 | SwiftUI: Button / TextField / Form | ⬜ 未着手 |
 | Day28 | SwiftUI: @Environment / @EnvironmentObject | ⬜ 未着手 |
