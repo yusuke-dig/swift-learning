@@ -48,7 +48,10 @@ struct TodoRow: View {
 
     var body: some View {
         // ここに実装してください
-        EmptyView()
+        HStack {
+            Text(item.isDone ? "✅" : "⬜")
+            Text(item.title)
+        }
     }
 }
 
@@ -62,11 +65,27 @@ struct TodoRow: View {
 // - 各行を NavigationLink でラップして TodoDetailView へ遷移させる
 //   （navigationDestination(for: TodoItem.self) を使う）
 struct TodoListView: View {
-    @State var items: [TodoItem] = []
+    @State var items: [TodoItem] = [
+        TodoItem(title: "牛乳を買う", isDone: true),
+        TodoItem(title: "読書する"),
+        TodoItem(title: "散歩に行く")
+    ]
 
     var body: some View {
         // ここに実装してください
-        EmptyView()
+        NavigationStack {
+            List {
+                ForEach(items) { item in
+                    NavigationLink(value: item) {
+                        TodoRow(item: item)
+                    }
+                }
+            }
+            .navigationTitle(Text("Todoリスト"))
+            .navigationDestination(for: TodoItem.self) { item in
+                TodoDetailView(item: item)
+            }
+        }
     }
 }
 
@@ -82,7 +101,13 @@ struct TodoDetailView: View {
 
     var body: some View {
         // ここに実装してください
-        EmptyView()
+        VStack(spacing: 16) {
+            Text(item.title)
+                .font(.title)
+            Text(item.isDone ? "完了: ✅" : "完了: ⬜")
+        }
+        .padding()
+        .navigationTitle(item.title)
     }
 }
 

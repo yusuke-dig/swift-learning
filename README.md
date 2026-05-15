@@ -41,7 +41,7 @@ swift test --filter Day01
 | Day23 | Actor / Sendable | ✅ 完了 | 2026-05-12 | [レビュー](Sources/SwiftLearning/Day23/REVIEW.md) |
 | Day24 | SwiftUI: View / Text / Stack | ✅ 完了 | 2026-05-13 | [レビュー](SwiftUILearning/Sources/SwiftUILearning/Day24/REVIEW.md) |
 | Day25 | SwiftUI: @State / @Binding | ✅ 完了 | 2026-05-14 | [レビュー](SwiftUILearning/Sources/SwiftUILearning/Day25/REVIEW.md) |
-| Day26 | SwiftUI: List / ForEach / Navigation | ⬜ 未完了 | - | |
+| Day26 | SwiftUI: List / ForEach / Navigation | ✅ 完了 | 2026-05-15 | [レビュー](SwiftUILearning/Sources/SwiftUILearning/Day26/REVIEW.md) |
 | Day27 | SwiftUI: Button / TextField / Form | ⬜ 未着手 | - | |
 | Day28 | SwiftUI: @Environment / @EnvironmentObject | ⬜ 未着手 | - | |
 | Day29 | UIKit: UIViewController / UILabel / UIButton | ⬜ 未着手 | - | Xcodeプロジェクト |
