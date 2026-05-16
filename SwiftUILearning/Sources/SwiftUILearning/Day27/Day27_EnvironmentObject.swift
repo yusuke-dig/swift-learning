@@ -41,6 +41,9 @@ struct ThemeToggleButton: View {
 
     var body: some View {
         // ここに実装してください
+        Button(theme.isDark ? "ライトモード ON" : "ダークモード ON") {
+            theme.isDark.toggle()
+        }
     }
 }
 
@@ -58,6 +61,18 @@ struct ThemedCard: View {
 
     var body: some View {
         // ここに実装してください
+        VStack(alignment: .leading, spacing: 8) {
+            Text(title)
+                .font(.headline)
+                .foregroundColor(theme.foreground)
+            Text(description)
+                .font(.body)
+                .foregroundColor(theme.foreground)
+        }
+        .padding()
+        .background(theme.background)
+        .cornerRadius(12)
+        .shadow(radius: 4)
     }
 }
 
@@ -74,6 +89,15 @@ struct ThemeRootView: View {
 
     var body: some View {
         // ここに実装してください
+        VStack(spacing: 24) {
+            ThemeToggleButton()
+            ThemedCard(title: "SwiftUI", description: "宣言的UIフレームワーク")
+            ThemedCard(title: "環境オブジェクト", description: "ビューツリー全体で状態共有")
+        }
+        .padding()
+        .background(theme.background)
+        .ignoresSafeArea()
+        .environmentObject(theme)
     }
 }
 
