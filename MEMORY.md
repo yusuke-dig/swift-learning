@@ -33,7 +33,7 @@
 | Day24 | SwiftUI: View / Text / Stack | ✅ 完了 (2026-05-13) |
 | Day25 | SwiftUI: @State / @Binding | ✅ 完了 (2026-05-14) |
 | Day26 | SwiftUI: List / ForEach / Navigation | ✅ 完了 (2026-05-15) |
-| Day27 | SwiftUI: Button / TextField / Form | ⬜ 未完了 |
+| Day27 | SwiftUI: Button / TextField / Form | ⬜ 未着手 |
 | Day28 | SwiftUI: @Environment / @EnvironmentObject | ⬜ 未完了 |
 | Day29 | UIKit: UIViewController / UILabel / UIButton | ⬜ 未着手 |
 | Day30 | UIKit: Auto Layout | ⬜ 未着手 |
