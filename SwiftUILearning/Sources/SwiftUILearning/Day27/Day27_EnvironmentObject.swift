@@ -1,4 +1,4 @@
-// Day28: SwiftUI @Environment / @EnvironmentObject
+// Day27: SwiftUI @Environment / @EnvironmentObject
 // テーマ: テーマ切替アプリを作りながら環境値の仕組みを練習する
 
 import SwiftUI

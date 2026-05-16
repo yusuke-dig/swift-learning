@@ -33,18 +33,17 @@
 | Day24 | SwiftUI: View / Text / Stack | ✅ 完了 (2026-05-13) |
 | Day25 | SwiftUI: @State / @Binding | ✅ 完了 (2026-05-14) |
 | Day26 | SwiftUI: List / ForEach / Navigation | ✅ 完了 (2026-05-15) |
-| Day27 | SwiftUI: Button / TextField / Form | ⬜ 未着手 |
-| Day28 | SwiftUI: @Environment / @EnvironmentObject | ⬜ 未完了 |
-| Day29 | UIKit: UIViewController / UILabel / UIButton | ⬜ 未着手 |
-| Day30 | UIKit: Auto Layout | ⬜ 未着手 |
-| Day31 | UIKit: UITableView | ⬜ 未着手 |
-| Day32 | UIKit: UINavigationController | ⬜ 未着手 |
-| Day33 | TCA 入門: Store / State / Action / Reducer | ⬜ 未着手 |
-| Day34 | TCA: Effect / async | ⬜ 未着手 |
-| Day35 | TCA: Dependency / テスト | ⬜ 未着手 |
-| Day36 | TCA: 画面遷移 / StackState | ⬜ 未着手 |
+| Day27 | SwiftUI: @Environment / @EnvironmentObject | ⬜ 未完了 |
+| Day28 | UIKit: UIViewController / UILabel / UIButton | ⬜ 未着手 |
+| Day29 | UIKit: Auto Layout | ⬜ 未着手 |
+| Day30 | UIKit: UITableView | ⬜ 未着手 |
+| Day31 | UIKit: UINavigationController | ⬜ 未着手 |
+| Day32 | TCA 入門: Store / State / Action / Reducer | ⬜ 未着手 |
+| Day33 | TCA: Effect / async | ⬜ 未着手 |
+| Day34 | TCA: Dependency / テスト | ⬜ 未着手 |
+| Day35 | TCA: 画面遷移 / StackState | ⬜ 未着手 |
 
-次に作るのは **Day29: UIKit: UIViewController / UILabel / UIButton**。
+次に作るのは **Day28: UIKit: UIViewController / UILabel / UIButton**。
 
 ## ディレクトリ構成
 - Day01〜Day23: `Sources/SwiftLearning/DayXX/`（SPM、swift testで完結）

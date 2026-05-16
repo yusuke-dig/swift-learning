@@ -42,14 +42,13 @@ swift test --filter Day01
 | Day24 | SwiftUI: View / Text / Stack | ✅ 完了 | 2026-05-13 | [レビュー](SwiftUILearning/Sources/SwiftUILearning/Day24/REVIEW.md) |
 | Day25 | SwiftUI: @State / @Binding | ✅ 完了 | 2026-05-14 | [レビュー](SwiftUILearning/Sources/SwiftUILearning/Day25/REVIEW.md) |
 | Day26 | SwiftUI: List / ForEach / Navigation | ✅ 完了 | 2026-05-15 | [レビュー](SwiftUILearning/Sources/SwiftUILearning/Day26/REVIEW.md) |
-| Day27 | SwiftUI: Button / TextField / Form | ⬜ 未着手 | - | |
-| Day28 | SwiftUI: @Environment / @EnvironmentObject | ⬜ 未完了 | - | |
-| Day29 | UIKit: UIViewController / UILabel / UIButton | ⬜ 未着手 | - | Xcodeプロジェクト |
-| Day30 | UIKit: Auto Layout | ⬜ 未着手 | - | |
-| Day31 | UIKit: UITableView | ⬜ 未着手 | - | |
-| Day32 | UIKit: UINavigationController | ⬜ 未着手 | - | |
-| Day33 | TCA 入門: Store / State / Action / Reducer | ⬜ 未着手 | - | SwiftUILearning に TCA 追加 |
-| Day34 | TCA: Effect / async | ⬜ 未着手 | - | |
-| Day35 | TCA: Dependency / テスト | ⬜ 未着手 | - | |
-| Day36 | TCA: 画面遷移 / StackState | ⬜ 未着手 | - | |
+| Day27 | SwiftUI: @Environment / @EnvironmentObject | ⬜ 未完了 | - | |
+| Day28 | UIKit: UIViewController / UILabel / UIButton | ⬜ 未着手 | - | Xcodeプロジェクト |
+| Day29 | UIKit: Auto Layout | ⬜ 未着手 | - | |
+| Day30 | UIKit: UITableView | ⬜ 未着手 | - | |
+| Day31 | UIKit: UINavigationController | ⬜ 未着手 | - | |
+| Day32 | TCA 入門: Store / State / Action / Reducer | ⬜ 未着手 | - | SwiftUILearning に TCA 追加 |
+| Day33 | TCA: Effect / async | ⬜ 未着手 | - | |
+| Day34 | TCA: Dependency / テスト | ⬜ 未着手 | - | |
+| Day35 | TCA: 画面遷移 / StackState | ⬜ 未着手 | - | |
 
