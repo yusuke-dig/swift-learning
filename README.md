@@ -43,7 +43,7 @@ swift test --filter Day01
 | Day25 | SwiftUI: @State / @Binding | ✅ 完了 | 2026-05-14 | [レビュー](SwiftUILearning/Sources/SwiftUILearning/Day25/REVIEW.md) |
 | Day26 | SwiftUI: List / ForEach / Navigation | ✅ 完了 | 2026-05-15 | [レビュー](SwiftUILearning/Sources/SwiftUILearning/Day26/REVIEW.md) |
 | Day27 | SwiftUI: @Environment / @EnvironmentObject | ✅ 完了 | 2026-05-15 | [レビュー](SwiftUILearning/Sources/SwiftUILearning/Day27/REVIEW.md) |
-| Day28 | UIKit: UIViewController / UILabel / UIButton | ⬜ 未完了 | - | Xcodeプロジェクト |
+| Day28 | UIKit: UIViewController / UILabel / UIButton | ✅ 完了 | 2026-05-17 | [レビュー](UIKitLearning/Sources/UIKitLearning/Day28/REVIEW.md) |
 | Day29 | UIKit: Auto Layout | ⬜ 未着手 | - | |
 | Day30 | UIKit: UITableView | ⬜ 未着手 | - | |
 | Day31 | UIKit: UINavigationController | ⬜ 未着手 | - | |

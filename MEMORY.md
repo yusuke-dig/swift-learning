@@ -34,7 +34,7 @@
 | Day25 | SwiftUI: @State / @Binding | ✅ 完了 (2026-05-14) |
 | Day26 | SwiftUI: List / ForEach / Navigation | ✅ 完了 (2026-05-15) |
 | Day27 | SwiftUI: @Environment / @EnvironmentObject | ✅ 完了 (2026-05-15) |
-| Day28 | UIKit: UIViewController / UILabel / UIButton | ⬜ 未完了 |
+| Day28 | UIKit: UIViewController / UILabel / UIButton | ✅ 完了 (2026-05-17) |
 | Day29 | UIKit: Auto Layout | ⬜ 未着手 |
 | Day30 | UIKit: UITableView | ⬜ 未着手 |
 | Day31 | UIKit: UINavigationController | ⬜ 未着手 |

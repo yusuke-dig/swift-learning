@@ -34,8 +34,14 @@ import UIKit
 // - font = .systemFont(ofSize: 24, weight: .bold) をセット
 // - textAlignment = .center をセット
 // - 作った UILabel を返す
+@MainActor
 func makeNameLabel(name: String) -> UILabel {
     // ここに実装してください
+    let label = UILabel()
+    label.text = name
+    label.font = .systemFont(ofSize: 24, weight: .bold)
+    label.textAlignment = .center
+    return label
 }
 
 // 課題2: makeGreetButton（中）
@@ -43,8 +49,13 @@ func makeNameLabel(name: String) -> UILabel {
 // - config.title = "挨拶する" をセット
 // - config.baseBackgroundColor = .systemBlue をセット
 // - UIButton(configuration: config) でボタンを作って返す
+@MainActor
 func makeGreetButton() -> UIButton {
     // ここに実装してください
+    var config = UIButton.Configuration.filled()
+    config.title = "挨拶する"
+    config.baseBackgroundColor = .systemBlue
+    return UIButton(configuration: config)
 }
 
 // 課題3: ProfileViewController（中）
@@ -66,10 +77,23 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // ここに実装してください
+        view.backgroundColor = .systemBackground
+        
+        nameLabel = makeNameLabel(name: "田中 太郎")
+        nameLabel.frame = CGRect(x: 20, y: 120, width: 335, height: 44)
+        
+        greetButton = makeGreetButton()
+        greetButton.frame = CGRect(x: 20, y: 180, width: 335, height: 44)
+        
+        view.addSubview(nameLabel)
+        view.addSubview(greetButton)
+        
+        greetButton.addTarget(self, action: #selector(greetTapped), for: .touchUpInside)
     }
 
     @objc func greetTapped() {
         // ここに実装してください
+        nameLabel.text = "こんにちは！"
     }
 }
 
