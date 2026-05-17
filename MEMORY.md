@@ -34,7 +34,7 @@
 | Day25 | SwiftUI: @State / @Binding | ✅ 完了 (2026-05-14) |
 | Day26 | SwiftUI: List / ForEach / Navigation | ✅ 完了 (2026-05-15) |
 | Day27 | SwiftUI: @Environment / @EnvironmentObject | ✅ 完了 (2026-05-15) |
-| Day28 | UIKit: UIViewController / UILabel / UIButton | ⬜ 未着手 |
+| Day28 | UIKit: UIViewController / UILabel / UIButton | ⬜ 未完了 |
 | Day29 | UIKit: Auto Layout | ⬜ 未着手 |
 | Day30 | UIKit: UITableView | ⬜ 未着手 |
 | Day31 | UIKit: UINavigationController | ⬜ 未着手 |
@@ -43,12 +43,13 @@
 | Day34 | TCA: Dependency / テスト | ⬜ 未着手 |
 | Day35 | TCA: 画面遷移 / StackState | ⬜ 未着手 |
 
-次に作るのは **Day28: UIKit: UIViewController / UILabel / UIButton**。
+次に作るのは **Day29: UIKit: Auto Layout**。
 
 ## ディレクトリ構成
 - Day01〜Day23: `Sources/SwiftLearning/DayXX/`（SPM、swift testで完結）
-- Day24〜Day28: `SwiftUILearning/`（Xcodeプロジェクト、Day24到達時に作成）
-- Day29〜Day32: `UIKitLearning/`（Xcodeプロジェクト、Day29到達時に作成）
+- Day24〜Day27: `SwiftUILearning/`（Xcodeプロジェクト）
+- Day28〜Day31: `UIKitLearning/`（Xcodeプロジェクト、Day28到達時に作成済み）
+- Day32〜Day35: `SwiftUILearning/`（TCA 追加）
 
 ## 関連ディレクトリ
 - 実装: `Sources/SwiftLearning/DayXX/`
