@@ -72,3 +72,10 @@ class ProfileViewController: UIViewController {
         // ここに実装してください
     }
 }
+
+// ─────────────────────────────────────────
+// Preview（Xcode で ⌥⌘Return → Canvas に表示されます）
+// ─────────────────────────────────────────
+#Preview("プロフィール画面") {
+    ProfileViewController()
+}
