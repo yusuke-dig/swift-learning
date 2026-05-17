@@ -4,6 +4,9 @@ import PackageDescription
 let package = Package(
     name: "UIKitLearning",
     platforms: [.iOS(.v17)],
+    products: [
+        .library(name: "UIKitLearning", targets: ["UIKitLearning"]),
+    ],
     targets: [
         .target(
             name: "UIKitLearning",
