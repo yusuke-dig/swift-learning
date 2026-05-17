@@ -36,11 +36,11 @@ struct Day28Tests {
         #expect(vc.nameLabel.text == "田中 太郎")
     }
 
-    @Test("課題3: ボタンタップで nameLabel のテキストが変わる")
+    @Test("課題3: greetTapped で nameLabel のテキストが変わる")
     func testGreetTapped() {
         let vc = ProfileViewController()
         vc.loadViewIfNeeded()
-        vc.greetButton.sendActions(for: .touchUpInside)
+        vc.greetTapped()
         #expect(vc.nameLabel.text == "こんにちは！")
     }
 }
